@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-white transition-colors">Leistungen</a></li>
               <li><a href="#work" className="hover:text-white transition-colors">Portfolio</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">Die Agentur</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kontakt</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Kontakt</a></li>
             </ul>
           </div>
 
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          <p>© 2024 Avalanche Studio. Gebaut für den Gipfel.</p>
+          <p>© 2025 Avalanche Studio. Gebaut für den Gipfel.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Impressum</a>
             <a href="#" className="hover:text-white transition-colors">Datenschutz</a>

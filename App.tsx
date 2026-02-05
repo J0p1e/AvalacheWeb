@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import CaseStudies from './components/CaseStudies';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CursorTrail from './components/CursorTrail';
 
@@ -35,6 +36,7 @@ const App: React.FC = () => {
         <About />
         <Services />
         <CaseStudies />
+        <Contact />
       </main>
       <Footer />
     </div>

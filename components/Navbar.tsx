@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { name: 'Leistungen', href: '#services' },
     { name: 'Portfolio', href: '#work' },
     { name: 'Agentur', href: '#about' },
-    { name: 'Karriere', href: '#' },
+    { name: 'Kontakt', href: '#contact' },
   ];
 
   return (
@@ -49,7 +49,8 @@ const Navbar: React.FC = () => {
 
         {/* Right Action */}
         <div className="hidden md:flex items-center gap-4">
-          <motion.button 
+          <motion.a
+            href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center gap-3 bg-white text-black hover:bg-gray-100 px-6 py-2.5 rounded-full font-bold transition-colors"
@@ -58,7 +59,7 @@ const Navbar: React.FC = () => {
             <div className="bg-black text-white p-1 rounded-full">
               <ArrowRight className="w-4 h-4" />
             </div>
-          </motion.button>
+          </motion.a>
         </div>
 
         {/* Mobile Toggle */}
@@ -89,9 +90,13 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <button className="bg-indigo-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2">
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="bg-indigo-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2"
+            >
               Kontakt aufnehmen <ArrowRight className="w-5 h-5" />
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
